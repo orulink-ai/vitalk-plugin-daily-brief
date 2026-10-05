@@ -1,3 +1,4 @@
+import { supportsDailyBriefHost } from "./host-version";
 import type { Session, UiLanguage } from "./types";
 interface BootstrapDependencies {
   client: {
@@ -26,12 +27,7 @@ export async function startDailyBrief({
   render,
 }: BootstrapDependencies) {
   const info = await client.host.info({});
-  const parts = info.appVersion.split(".").map(Number);
-  if (
-    parts.length !== 3 ||
-    parts.some((n) => !Number.isSafeInteger(n)) ||
-    (parts[0] === 0 && (parts[1] < 6 || (parts[1] === 6 && parts[2] < 11)))
-  )
+  if (!supportsDailyBriefHost(info.appVersion))
     throw new Error("今日简报需要 ViTalk 0.6.11 或更新版本");
   const language: UiLanguage = info.language === "en" ? "en" : "zh-CN";
   const date = new Date();

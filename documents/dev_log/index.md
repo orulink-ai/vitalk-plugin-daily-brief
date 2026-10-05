@@ -27,3 +27,11 @@
 v1.0.0 Release固定不覆盖；准备v1.0.1供真实更新链路验收。统一SDK0.4文档包（业务API代码相同），补原UI连续两轮提问和重新生成回归。移除未提供的本地publisher脚本，README指向公共目录内已提供工具，避免npm run publish引用不存在的文件。
 
 验证：14项Vitest+2项Node仍通过、类型检查与独立构建通过；发布审核暂被真实fork checkout限制阻断，公共目录修复维护中。不将版本上传等同正式上架。
+
+## 2026-10-06 02:02｜Codex / plugin_architect｜宿主版本兼容修复
+
+独立架构评审实际复现：Store允许0.6.11-dev/+build安装，原bootstrap却拒绝；负数major与前导零也被旧比较误接受。先加启动行为测试，Red：5失败10通过；新增独立host-version工具按稳定core比较最低0.6.11，同时验证合法预发布/build标识，拒绝非法、负数与前导零。仅依赖标准JavaScript，不导入宿主私有代码。原UI和SDK接口不变。
+
+升级package/manifest/lock为1.0.2，已发布1.0.0/1.0.1保持不可变。README发布命令改为从package.json取得版本，发布前确认manifest一致，不再硬编码过期tag。当前尚未提交、推送、Release或上架新1.0.2，真实更新回执需主任务补齐。
+
+验证：[Red](host-version-red.log)、[Green](host-version-green.log) Vitest27+Node2通过、[typecheck](host-version-typecheck.log)通过、[build](host-version-build.log)通过；包405002字节，SHA256 `a97fa3be00a26ff5b184b5653f4370416a0453d8e1eaa756d1ae1dfb6bd63ca3`。构建出现既有第三方use-client指令警告，未报错。这组自动化不等于原生更新或真实模型验收。

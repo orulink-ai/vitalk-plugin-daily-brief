@@ -20,9 +20,22 @@ npm run build
 ## 发布上架
 
 1. 更新本仓库 manifest 与 package 版本，运行上面的检查。
-2. 用 `gh release create v1.0.0 dist/vitalk.daily-brief.vitalk-plugin.json --repo orulink-ai/vitalk-plugin-daily-brief --title '今日简报 1.0.0' --notes-file documents/dev_log/release.md` 将包发布到固定版本 Release。
+2. 从当前 package.json 取得精确版本，核对 manifest 版本相同，发布全新固定 Release。当前代码版本为1.0.2；已发布1.0.0/1.0.1不可覆盖。
+
+```sh
+PLUGIN_VERSION=$(node -p "require('./package.json').version")
+node --input-type=module -e "import fs from 'node:fs'; const p=JSON.parse(fs.readFileSync('package.json')); const m=JSON.parse(fs.readFileSync('manifest.json')); if(p.version!==m.version) throw Error('版本不一致');"
+gh release create "v${PLUGIN_VERSION}" dist/vitalk.daily-brief.vitalk-plugin.json --repo orulink-ai/vitalk-plugin-daily-brief --title "今日简报 ${PLUGIN_VERSION}" --notes-file documents/dev_log/release.md
+```
+
 3. 克隆 [公共插件目录](https://github.com/orulink-ai/vitalk-plugins)，安装其中 publisher 工具依赖。
-4. 运行 `node /目录/vitalk-plugins/publisher/cli.mjs --repository orulink-ai/vitalk-plugin-daily-brief --tag v1.0.0 --asset vitalk.daily-brief.vitalk-plugin.json --min-host 0.6.11 --dry-run`；确认后去掉 dry-run。它会自动创建公共目录 PR。
+4. 保持在插件项目目录，运行以下命令；确认计划后去掉 `--dry-run`。工具自动创建公共目录 PR。
+
+```sh
+PLUGIN_VERSION=$(node -p "require('./package.json').version")
+node /目录/vitalk-plugins/publisher/cli.mjs --repository orulink-ai/vitalk-plugin-daily-brief --tag "v${PLUGIN_VERSION}" --asset vitalk.daily-brief.vitalk-plugin.json --min-host 0.6.11 --dry-run
+```
+
 5. 等待检查与管理员审核。合并后客户端从静态目录发现插件，下载时核验实际包的 SHA256 与大小。
 
 每次更新创建新版本和新 Release，再执行工具；不用手工编写 PR，不允许覆盖已登记版本。本地导入与公共上架是两个入口。本版没有独立的上传审核服务器。

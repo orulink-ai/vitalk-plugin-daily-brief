@@ -1,0 +1,55 @@
+
+ RUN  v4.1.10 /Users/zhouyann/Desktop/zouyu的项目/ViTalk-plugin-daily-brief
+
+ ❯ src/bootstrap.test.ts (15 tests | 5 failed) 8ms
+   × accepts compatible core host version 0.6.11-dev before loading 1ms
+   × accepts compatible core host version 0.6.11+build.42 before loading 0ms
+   × accepts compatible core host version 0.6.11-rc.1+build.42 before loading 0ms
+   × rejects unsupported or malformed host -1.6.11 before reading 1ms
+   × rejects unsupported or malformed host 00.6.11 before reading 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 5 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/bootstrap.test.ts > accepts compatible core host version 0.6.11-dev before loading
+ FAIL  src/bootstrap.test.ts > accepts compatible core host version 0.6.11+build.42 before loading
+ FAIL  src/bootstrap.test.ts > accepts compatible core host version 0.6.11-rc.1+build.42 before loading
+Error: 今日简报需要 ViTalk 0.6.11 或更新版本
+ ❯ startDailyBrief src/bootstrap.ts:35:11
+     33|     (parts[0] === 0 && (parts[1] < 6 || (parts[1] === 6 && parts[2] < …
+     34|   )
+     35|     throw new Error("今日简报需要 ViTalk 0.6.11 或更新版本");
+       |           ^
+     36|   const language: UiLanguage = info.language === "en" ? "en" : "zh-CN";
+     37|   const date = new Date();
+ ❯ src/bootstrap.test.ts:49:17
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/5]⎯
+
+ FAIL  src/bootstrap.test.ts > rejects unsupported or malformed host -1.6.11 before reading
+ FAIL  src/bootstrap.test.ts > rejects unsupported or malformed host 00.6.11 before reading
+AssertionError: promise resolved "[Function]" instead of rejecting
+
+- Expected:
+Error {
+  "message": "rejected promise",
+}
+
++ Received:
+[Function anonymous]
+
+ ❯ src/bootstrap.test.ts:61:6
+     59|     client: { host: { info: async () => ({ appVersion }) }, history: {…
+     60|     load, hydrate: vi.fn(async () => {}), render: vi.fn(),
+     61|   })).rejects.toThrow("0.6.11");
+       |      ^
+     62|   expect(load).not.toHaveBeenCalled();
+     63| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/5]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  5 failed | 10 passed (15)
+   Start at  02:01:42
+   Duration  97ms (transform 14ms, setup 0ms, import 20ms, tests 8ms, environment 0ms)
+
