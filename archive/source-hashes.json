@@ -1,0 +1,18 @@
+{
+  "DailyBrief.original.tsx": {
+    "source": "src/features/summary/DailyBrief.tsx",
+    "sha256": "df08a32d8ad834b9785f5d34eac4297371c7da5b01f9e013b71f880b324d100b"
+  },
+  "daily-brief.original.ts": {
+    "source": "src/features/summary/daily-brief.ts",
+    "sha256": "b8431f93f60557b9515442f48c6ccd540105380b2bfb0f8ac15c27717ba31953"
+  },
+  "daily-brief.original.test.ts": {
+    "source": "src/features/summary/daily-brief.test.ts",
+    "sha256": "bdf3cd578727ca2fc0e224a55009f569b56c39c02146cea85707cb2159cb24ac"
+  },
+  "styles.original.css": {
+    "source": "src/styles.css",
+    "sha256": "e977d49ebd6ad717c503f14b023b5eed2b65a87850f55f4f8ec2cee3e5fa3f76"
+  }
+}

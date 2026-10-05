@@ -1,0 +1,40 @@
+{
+  "name": "vitalk-plugin-daily-brief",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run && node --test test/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "build": "node build.mjs",
+    "publish": "node publisher/cli.mjs --repository orulink-ai/vitalk-plugin-daily-brief --tag v1.0.0 --asset vitalk.daily-brief.vitalk-plugin.json --min-host 0.6.11"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "dependencies": {
+    "@vitalk/plugin-sdk": "file:vendor/vitalk-plugin-sdk-0.4.0.tgz",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "@base-ui/react": "1.7.0",
+    "lucide-react": "1.29.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.6.0",
+    "class-variance-authority": "0.7.1",
+    "@fontsource-variable/geist": "5.3.0",
+    "tw-animate-css": "1.4.0"
+  },
+  "devDependencies": {
+    "jsdom": "27.4.0",
+    "vite": "8.2.1",
+    "vitest": "4.1.10",
+    "typescript": "5.9.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "@types/node": "25.9.5",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "14.6.3",
+    "@tailwindcss/vite": "4.3.3",
+    "tailwindcss": "4.3.3"
+  }
+}
