@@ -21,3 +21,9 @@
 - [启动Red](bootstrap-red.txt)、[打包Red](package-red.txt)、[16项Green](tests-green.txt)
 - [生产依赖审计](production-audit.json)
 - [原始源码](../../archive/)：原页面留档，非当前运行产物。
+
+## 2026-10-06 01:42｜Codex｜版本更新准备
+
+v1.0.0 Release固定不覆盖；准备v1.0.1供真实更新链路验收。统一SDK0.4文档包（业务API代码相同），补原UI连续两轮提问和重新生成回归。移除未提供的本地publisher脚本，README指向公共目录内已提供工具，避免npm run publish引用不存在的文件。
+
+验证：14项Vitest+2项Node仍通过、类型检查与独立构建通过；发布审核暂被真实fork checkout限制阻断，公共目录修复维护中。不将版本上传等同正式上架。

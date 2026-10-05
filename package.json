@@ -1,13 +1,12 @@
 {
   "name": "vitalk-plugin-daily-brief",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
   "scripts": {
     "test": "vitest run && node --test test/*.test.mjs",
     "typecheck": "tsc --noEmit",
-    "build": "node build.mjs",
-    "publish": "node publisher/cli.mjs --repository orulink-ai/vitalk-plugin-daily-brief --tag v1.0.0 --asset vitalk.daily-brief.vitalk-plugin.json --min-host 0.6.11"
+    "build": "node build.mjs"
   },
   "engines": {
     "node": ">=20.19"

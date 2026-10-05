@@ -2,7 +2,7 @@
   "id": "vitalk.daily-brief",
   "name": "今日简报",
   "description": "回顾当天表达、统计、待确认事项，并用你配置的模型继续复盘。",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sdkVersion": 1,
   "permissions": [
     "history.read",
@@ -11,5 +11,8 @@
     "tasks.read",
     "tasks.write"
   ],
-  "page": { "title": "今日简报", "layout": "full" }
+  "page": {
+    "title": "今日简报",
+    "layout": "full"
+  }
 }

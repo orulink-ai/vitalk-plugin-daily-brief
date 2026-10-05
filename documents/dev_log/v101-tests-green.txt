@@ -1,0 +1,391 @@
+
+> vitalk-plugin-daily-brief@1.0.1 test
+> vitest run && node --test test/*.test.mjs
+
+
+ RUN  v4.1.10 /Users/zhouyann/Desktop/zouyu的项目/ViTalk-plugin-daily-brief
+
+
+ Test Files  4 passed (4)
+      Tests  14 passed (14)
+   Start at  01:41:55
+   Duration  791ms (transform 114ms, setup 0ms, import 294ms, tests 195ms, environment 347ms)
+
+TAP version 13
+# vite v8.2.1 building client environment for production...
+# transforming...
+# ✓ 1889 modules transformed.
+# rendering chunks...
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/button/Button.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/button/Button.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/input/Input.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/input/Input.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useRefWithInit.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useRefWithInit.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/use-button/useButton.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/use-button/useButton.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/validity/FieldValidity.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/validity/FieldValidity.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/error/FieldError.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/error/FieldError.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/description/FieldDescription.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/description/FieldDescription.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/item/FieldItem.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/item/FieldItem.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/control/FieldControl.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/control/FieldControl.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/root/FieldRoot.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/root/FieldRoot.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useStableCallback.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useStableCallback.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useIsoLayoutEffect.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useIsoLayoutEffect.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/useTransitionStatus.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/useTransitionStatus.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/utils/useFocusableWhenDisabled.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/utils/useFocusableWhenDisabled.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/label/FieldLabel.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/label/FieldLabel.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/composite/root/CompositeRootContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/composite/root/CompositeRootContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/useBaseUiId.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/useBaseUiId.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/labelable-provider/LabelableContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/labelable-provider/LabelableContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/field-root-context/FieldRootContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/field-root-context/FieldRootContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/form-context/FormContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/form-context/FormContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/item/FieldItemContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/item/FieldItemContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/field-register-control/useRegisterFieldControl.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/field-register-control/useRegisterFieldControl.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/fieldset/root/FieldsetRootContext.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/fieldset/root/FieldsetRootContext.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useControlled.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useControlled.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/labelable-provider/useLabelableId.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/labelable-provider/useLabelableId.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/field-register-control/useFieldControlRegistration.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/field-register-control/useFieldControlRegistration.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/useOpenChangeComplete.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/useOpenChangeComplete.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useAnimationFrame.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useAnimationFrame.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/field/root/useFieldValidation.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/field/root/useFieldValidation.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/labelable-provider/useLabel.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/labelable-provider/useLabel.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/labelable-provider/useAriaLabelledBy.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/labelable-provider/useAriaLabelledBy.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/labelable-provider/LabelableProvider.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/labelable-provider/LabelableProvider.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useId.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useId.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useTimeout.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useTimeout.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/internals/useAnimationsFinished.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/internals/useAnimationsFinished.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/utils/useOnMount.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/utils/useOnMount.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/@base-ui/react/utils/useRegisteredLabelId.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/@base-ui/react/utils/useRegisteredLabelId.mjs:1:1 ]
+#    │
+#  1 │ 'use client';
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/lucide-react/dist/esm/Icon.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/lucide-react/dist/esm/Icon.mjs:2:1 ]
+#    │
+#  2 │ "use client";
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# [MODULE_LEVEL_DIRECTIVE] The semantics of the module level directive "use client" in "node_modules/lucide-react/dist/esm/context.mjs" may not be preserved when bundling.
+#    ╭─[ node_modules/lucide-react/dist/esm/context.mjs:2:1 ]
+#    │
+#  2 │ "use client";
+#    │ ──────┬──────
+#    │       ╰──────── module level directive may not be preserved
+#    │
+#    │ Help: For more information, see https://rolldown.rs/in-depth/directives\#other-directives
+# ───╯
+# ✓ built in 161ms
+# Subtest: builds a self contained public SDK package with reproducible digest
+ok 1 - builds a self contained public SDK package with reproducible digest
+  ---
+  duration_ms: 217.168416
+  type: 'test'
+  ...
+# Subtest: source modules do not import host private or native APIs
+ok 2 - source modules do not import host private or native APIs
+  ---
+  duration_ms: 3.607125
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 312.211625

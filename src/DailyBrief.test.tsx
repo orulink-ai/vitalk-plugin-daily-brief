@@ -102,6 +102,22 @@ it("preserves original cover, statistics, highlights, task status sync and follo
     [],
     "zh-CN",
   );
+  fireEvent.change(screen.getByRole("textbox", { name: "向每日助理提问" }), {
+    target: { value: "接下来呢？" },
+  });
+  fireEvent.click(screen.getByRole("button", { name: "发送问题" }));
+  await waitFor(() => expect(onReview).toHaveBeenCalledTimes(2));
+  expect(onReview).toHaveBeenLastCalledWith(
+    expect.any(String),
+    "接下来呢？",
+    [
+      { role: "user", text: "发布完成了吗？" },
+      { role: "assistant", text: "根据当天记录，发布还需要验证。" },
+    ],
+    "zh-CN",
+  );
+  fireEvent.click(screen.getByRole("button", { name: "重新生成总结" }));
+  await waitFor(() => expect(onGenerate).toHaveBeenCalledTimes(2));
   fireEvent.click(screen.getByRole("button", { name: "返回首页" }));
   expect(onBack).toHaveBeenCalledOnce();
 });
