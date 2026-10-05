@@ -1,0 +1,37 @@
+{
+  "id": 4,
+  "result": {
+    "dataRetained": true,
+    "explicitEnableRequired": true,
+    "instrumentedIframe": true,
+    "isolatedProfile": true,
+    "newVersion": "1.0.2",
+    "oldVersion": "1.0.1",
+    "realModel": false,
+    "realNativeDownload": true,
+    "realUpdateUI": true,
+    "retiredSessionValidation": "unit runtime rejection contract; native synthetic MessageEvent source unsupported",
+    "updatedFramePainted": true,
+    "updatedOriginalUI": {
+      "body": "返回首页\n今天\n10月6日 星期二\n本地初步整理\n\n重新生成总结\n今日简报\n今天共整理 3 次表达，形成 3 条重点，并发现 0 项值得确认的事项。\n模型总结生成失败，当前仍显示本地初步整理。模型或识别请求失败，请检查应用配置\nSynthetic plugin smoke\n次表达\n3\n字\n60\n分钟\n3\n今日重点\n来自今天成功转写的重点内容。\n02:14\n合成验收：今天完成插件目录审核和下载验证。\nSynthetic plugin smoke\n02:14\n合成验收：明天需要确认项目发布清单。\nSynthetic plugin smoke\n02:14\n合成验收：讨论独立仓库与公开 SDK 的职责。\nSynthetic plugin smoke\n待确认事项\n以下是潜在承诺，不代表系统认定你尚未完成。\n目前没有需要确认的事项。\n继续复盘\n使用设置页已配置的大语言模型，围绕今天的转写继续复盘。\n你的问题和每日助理的回答会出现在这里。\n\n发送问题",
+      "hasCover": true,
+      "hasFollowUps": true,
+      "hasHighlights": true,
+      "hasReview": true,
+      "modelErrorBoundary": true,
+      "source": true,
+      "stats": [
+        "3",
+        "60",
+        "3"
+      ],
+      "storageMarker": {
+        "value": "retained"
+      },
+      "syntheticText": true
+    },
+    "updatedSdkMarker": {
+      "value": "retained"
+    }
+  }
+}

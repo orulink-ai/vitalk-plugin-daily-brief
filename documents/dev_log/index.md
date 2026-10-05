@@ -3,7 +3,7 @@
 - 任务标识：task-53758a2f-e39e-4711-801d-94236098833a
 - 开始时间：2026-10-06T00:53:58.197728+08:00
 - 建档者：zhouyann00；参与者：Codex
-- 阶段：实现中
+- 阶段：待验收（发布和原生生命周期已验证）
 - 关联Issue：orulink-ai/ViTalk #43 https://github.com/orulink-ai/ViTalk/issues/43
 - 主任务：ViTalk documents/dev_log/2026-10-05/2026-10-05_234418_zhouyann00_未关联Issue_插件市场发布流程与今日简报走查/index.md
 - 范围：保留原DailyBriefPage布局、文案、算法与状态交互；移除私有宿主/原生依赖，使用公开SDK；独立构建和真实GitHub发布。
@@ -35,3 +35,15 @@ v1.0.0 Release固定不覆盖；准备v1.0.1供真实更新链路验收。统一
 升级package/manifest/lock为1.0.2，已发布1.0.0/1.0.1保持不可变。README发布命令改为从package.json取得版本，发布前确认manifest一致，不再硬编码过期tag。当前尚未提交、推送、Release或上架新1.0.2，真实更新回执需主任务补齐。
 
 验证：[Red](host-version-red.log)、[Green](host-version-green.log) Vitest27+Node2通过、[typecheck](host-version-typecheck.log)通过、[build](host-version-build.log)通过；包405002字节，SHA256 `a97fa3be00a26ff5b184b5653f4370416a0453d8e1eaa756d1ae1dfb6bd63ca3`。构建出现既有第三方use-client指令警告，未报错。这组自动化不等于原生更新或真实模型验收。
+
+## 2026-10-06 02:35 Asia/Shanghai｜Codex｜正式发布与原生验证
+
+1.0.2提交e115f1b及固定Release已公开。自动目录PR6校验通过，合入提交有两个parent。Pages包含三个固定版本。
+
+同一隔离原生进程先安装1.0.1，再更新1.0.2。权限确认、SDK数据保留及重新启用通过。新页面实际绘制，随后停用、卸载并保留数据。
+
+[更新页面回执](native-updated-frame-receipt.json)、[生命周期回执](native-lifecycle-receipt.json)、[原生原界面](native-daily-v102.png)。
+
+使用三条合成历史；探针只附加执行文档，持久化包不变。实际模型未配置，错误边界通过，realModel=false。
+
+旧Window探针在WebKit失败，宿主替换回归证明旧会话失效。订阅清理与迟到结果丢弃分别有断言。产品及架构独立复评均为10分，限可信GitHub市场MVP。真实云模型质量与任意不可信代码隔离不在此评分范围。
